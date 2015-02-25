@@ -1,0 +1,71 @@
+{
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "quotes": "single",
+
+    // Don't require strict mode
+    "strict": false,
+
+    // Lets you have a literal at the left of and if
+    // statement: if ('something' === variable) {
+    "no-yoda": false,
+
+    // Allow console.log
+    // "no-console": false,
+
+    // Enforce this style:
+    // if (something) {
+    // } else {
+    // }
+    "brace-style": [2, "stroustrup"],
+
+    // this is an allowed function (){
+    "no-spaced-func": [0, false],
+
+    // Enforce a valid jsdoc
+    // "valid-jsdoc": [0, true],
+
+    // Enforce all variables being camel case
+    "camelcase": [2, true],
+
+    // Don't allow [ "hello" ]
+    // "space-in-brackets": [2, "never"],
+
+    // Don't allo0w 1+1
+    "space-infix-ops": [2, true],
+
+    // There can only be one var statement inside a function
+    "one-var": [2, true],
+
+    // There has to be a space after if:
+    // if () {
+    //"space-after-keywords": [2, "always"],
+
+    "no-underscore-dangle": 0,
+
+    "no-unused-vars": [2, {"vars": "all", "args": "none"}],
+
+    "no-unreachable": 2,
+
+    "no-shadow": 2,
+
+    "consistent-this": [2, "me"],
+
+    "no-comma-dangle": [2, true],
+
+    "dot-notation": [1, true]
+  },
+  "globals": {
+    // Add your globals here
+    "ActiveXObject": true,
+    "console": true,
+    "Ext": true,
+    "$RemoteAction": true,
+    "$Params": true,
+    "$Label": true,
+    "Fflib": true,
+    "Ffalib": true
+  }
+}
