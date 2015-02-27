@@ -1,10 +1,23 @@
-<h3>{{title}}</h3>
+<h2>{{title}}</h2>
 <hr>
-<span>Please add a task:</span>
-<br>
-<br>
+<!-- Task pending panel -->
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<h3 class="panel-title">Your tasks:</h3>
+	</div>
+	<div class="panel-body">
+		{{myTask}}
+		<!-- <span>Sure you have a lot to do. Let's start!</span> -->
+	</div>
+</div>
+<!-- Add task panel -->
 <div class="panel panel-default">
   <div class="panel-body">
-    My task container
+    <div class="input-group">
+      <input type="text" maxlength="128" class="form-control" placeholder="What you have to do?" ng-model="myTask">
+      <span class="input-group-btn">
+        <button class="btn btn-success" type="button" ng-click="save()">List it!</button>
+      </span>
+    </div>
   </div>
 </div>
